@@ -6,21 +6,21 @@
 ## Modules 
 
 ### Gathering Data
-#### Web Scaping 
-#### API 
+#### - Web Scaping 
+#### - API 
 
 ### Data Preprocessing 
-#### Data Cleaning and Modeling 
-#### Preprocessing 
+#### - Data Cleaning and Modeling 
+#### - Preprocessing 
 
 ### Data Science 
-#### Find Outliers 
-#### Classification 
-#### Clustering 
+#### - Find Outliers 
+#### - Classification 
+#### - Clustering 
+#### - Prediction 
 
 ### Visualization 
-#### Power BI / Tableau 
-
+#### - Power BI / Tableau 
 
 ## Additional Papers 
 ### PAPER 1 
