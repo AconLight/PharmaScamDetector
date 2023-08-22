@@ -19,6 +19,12 @@
 #### - Clustering 
 #### - Prediction 
 
+### Automatization 
+#### - Push Data Periodically 
+#### - Machine Learning 
+#### - Updating Model + Drift Detection (?) 
+#### - Control Drug Withdrawal Time 
+
 ### Visualization 
 #### - Power BI / Tableau 
 
