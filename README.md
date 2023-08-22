@@ -14,7 +14,7 @@
 #### Preprocessing 
 
 ### Data Science 
-#### Find Outlinerd 
+#### Find Outliers 
 #### Classification 
 #### Clustering 
 
