@@ -28,7 +28,7 @@ def davis_paper_read():
             grouped_rows[-1] = [f"{x} {value[idx]}" for idx, x in enumerate(grouped_rows[-1])]
             grouped_rows[-1][2] = grouped_rows[-1][2].replace(" ", "")
 
-    grouped_df = pd.DataFrame(grouped_rows).drop([0]).set_axis(['name', 'purpose', 'website'], axis=1)
+    grouped_df = pd.DataFrame(grouped_rows).drop([0]).set_axis(['name', 'description', 'web_link'], axis=1)
     return grouped_df
 
 

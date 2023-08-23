@@ -2,7 +2,7 @@ import httpx
 from selectolax.parser import HTMLParser
 
 
-def selector_scrap(store, url, selector):
+def selector_scrap(url, selector):
     resp = httpx.get(
         url,
         headers={
@@ -11,4 +11,4 @@ def selector_scrap(store, url, selector):
     )
     html = HTMLParser(resp.text)
     data = html.css(selector)
-    return {"store": store, "data": data}
+    return data
