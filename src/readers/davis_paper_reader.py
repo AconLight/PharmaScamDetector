@@ -1,6 +1,3 @@
-from itertools import groupby
-from operator import itemgetter
-
 import camelot
 from pathlib import Path
 
