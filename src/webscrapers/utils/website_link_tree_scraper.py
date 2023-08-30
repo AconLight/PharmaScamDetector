@@ -2,7 +2,7 @@ import httpx
 from selectolax.parser import HTMLParser
 
 
-def website_link_tree_scrapper(root_link, page_link):
+def website_link_tree_scraper(root_link, page_link):
     website_contents = []
     next_page_links = []
     try:
