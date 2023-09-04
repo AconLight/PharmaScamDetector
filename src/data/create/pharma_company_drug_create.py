@@ -8,6 +8,7 @@ def pharma_company_drug_create_from_scrap(pharma_list):
     pharma_company_data_objects = []
     drug_data_objects = []
     drug_pharma_company_data_objects = []
+    drug_dict = {}
 
     for pharma in pharma_list:
         pharma_company_data_object = PharmaCompanyDataObject({
@@ -17,11 +18,14 @@ def pharma_company_drug_create_from_scrap(pharma_list):
         })
         pharma_company_data_objects.append(pharma_company_data_object)
         for drug_name in pharma["drugs"]:
-            drug_data_object = DrugDataObject({
-                "drug_name": drug_name
-            })
-            drug_data_objects.append(drug_data_object)
-            drug_pharma_company_data_object = DrugPharmaCompanyDataObject(drug_data_object, pharma_company_data_object, {})
+            if drug_name not in drug_dict.keys():
+                drug_data_object = DrugDataObject({
+                    "drug_name": drug_name
+                })
+                drug_data_objects.append(drug_data_object)
+                drug_dict[drug_name] = drug_data_object
+
+            drug_pharma_company_data_object = DrugPharmaCompanyDataObject(drug_dict[drug_name], pharma_company_data_object, {})
             drug_pharma_company_data_objects.append(drug_pharma_company_data_object)
 
     return pharma_company_data_objects, drug_data_objects, drug_pharma_company_data_objects
