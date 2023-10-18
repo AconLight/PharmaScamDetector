@@ -1,4 +1,4 @@
-from src.data.datamodel.PPP_pharma_company_data_object import PPPPharmaCompanyDataObject
+from src.data.datamodel.association.PPP_pharma_company_data_object import PPPPharmaCompanyDataObject
 
 
 def ppp_pharma_company_create_from_scrap(ppp_and_pharma_companies):

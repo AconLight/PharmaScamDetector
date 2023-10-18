@@ -1,5 +1,5 @@
 from src.data.create.pharma_company_drug_create import pharma_company_drug_create_from_scrap
-from src.data.create.ppp_create import ppp_from_df
+from src.data.create.ppp_create import ppp_from_pdf_df
 from src.data.create.ppp_pharma_company_create import ppp_pharma_company_create_from_scrap
 from src.readers.davis_paper_reader import davis_paper_read
 from src.webscrapers.pharma_company_from_PPP_scrap import pharma_company_from_PPP_scrap
@@ -14,7 +14,7 @@ if __name__ == '__main__':
 
     # create PPPs from davis pdf
     ppp_list_df = davis_paper_read()
-    ppp_data_objects = ppp_from_df(ppp_list_df)
+    ppp_data_objects = ppp_from_pdf_df(ppp_list_df)
 
     # create (PPP - pharma company) association from PPP web_links
     ppp_pharma_company_list = pharma_company_from_PPP_scrap(

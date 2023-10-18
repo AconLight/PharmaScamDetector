@@ -1,8 +1,9 @@
 
 
 class DataObject:
-    def __init__(self, name, data_dict):
+    def __init__(self, name, identifier, data_dict):
         self.data_object_name = name
+        self.identifier = identifier
         self.data_dict = data_dict
         self.data_refs = {}  # {"name": [{"data_object": data_object, "ref_data_object": ref_data_object}]}
 
