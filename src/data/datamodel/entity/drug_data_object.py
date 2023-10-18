@@ -5,9 +5,9 @@ from src.data.datamodel.data_object import DataObject
 
 
 class DrugDataObject(DataObject):
-    def __init__(self, data_dict):
+    def __init__(self, identifier, data_dict):
         # TODO check data_dict keys and values
-        DataObject.__init__(self, DRUG_DATA_OBJECT_NAME, data_dict)
+        DataObject.__init__(self, DRUG_DATA_OBJECT_NAME, identifier, data_dict)
         self.data_refs = {DRUG_PHARMA_COMPANY_DATA_OBJECT_NAME: []}
 
     # def add_ppp_pharma_company_ref(self, ppp_pharma_company_data_object):

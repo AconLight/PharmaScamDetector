@@ -3,6 +3,6 @@ from src.data.datamodel.data_object import DataObject
 
 
 class PharmaCompanyDataObject(DataObject):
-    def __init__(self, data_dict):
+    def __init__(self, identifier, data_dict):
         # TODO check data_dict keys and values
-        DataObject.__init__(self, PHARMA_COMPANY_DATA_OBJECT_NAME, data_dict)
+        DataObject.__init__(self, PHARMA_COMPANY_DATA_OBJECT_NAME, identifier, data_dict)

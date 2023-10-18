@@ -1,0 +1,1 @@
+INSERT INTO pharma_company (name) VALUES (:name);
